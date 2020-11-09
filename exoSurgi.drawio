@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-11-09T18:53:39.073Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36" etag="KzCU-QJIlrXOmW7xITQI" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-09T20:26:36.529Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36" etag="Ylnh_cpR5CouE7lkrcA9" version="13.9.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2054" dy="682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1870" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -13,7 +13,7 @@
         <mxCell id="rni8tC35Q871cZvnRtiC-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-0" vertex="1">
           <mxGeometry y="70" width="240" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="rni8tC35Q871cZvnRtiC-3" value="+ loadSTL(QString): void&#xa;+ minimumDistance(double[3]): double&#xa;- clean()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-0" vertex="1">
+        <mxCell id="rni8tC35Q871cZvnRtiC-3" value="+ loadSTL(QString): bool&#xa;+ minimumDistance(double[3]): double&#xa;- clean()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-0" vertex="1">
           <mxGeometry y="78" width="240" height="62" as="geometry" />
         </mxCell>
         <mxCell id="rni8tC35Q871cZvnRtiC-4" value="Triangle" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -41,31 +41,31 @@
           <mxGeometry y="88" width="160" height="32" as="geometry" />
         </mxCell>
         <mxCell id="rni8tC35Q871cZvnRtiC-15" value="Data &lt;&lt;singleton&gt;&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-680" y="840" width="200" height="200" as="geometry" />
+          <mxGeometry x="-720" y="840" width="240" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="rni8tC35Q871cZvnRtiC-16" value="- m_mesh: Mesh*&#xa;- &lt;&lt;static&gt;&gt; m_instance: Data*&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-15" vertex="1">
-          <mxGeometry y="26" width="200" height="54" as="geometry" />
+        <mxCell id="rni8tC35Q871cZvnRtiC-16" value="- m_meshList: QMap&lt;QString, Mesh*&gt;&#xa;- &lt;&lt;static&gt;&gt; m_instance: Data*&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-15" vertex="1">
+          <mxGeometry y="26" width="240" height="54" as="geometry" />
         </mxCell>
         <mxCell id="rni8tC35Q871cZvnRtiC-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-15" vertex="1">
-          <mxGeometry y="80" width="200" height="8" as="geometry" />
+          <mxGeometry y="80" width="240" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="rni8tC35Q871cZvnRtiC-18" value="- constructor&#xa;+ &lt;&lt;static&gt;&gt; instance: Data*&#xa;+ mesh(): Mesh*" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-15" vertex="1">
-          <mxGeometry y="88" width="200" height="112" as="geometry" />
+        <mxCell id="rni8tC35Q871cZvnRtiC-18" value="- constructor&#xa;+ &lt;&lt;static&gt;&gt; instance: Data*&#xa;+ addNewMesh(QString, Mesh*) void&#xa;+ getMeshList(): QStringList&#xa;+ getMesh(QString): Mesh*" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-15" vertex="1">
+          <mxGeometry y="88" width="240" height="112" as="geometry" />
         </mxCell>
         <mxCell id="rni8tC35Q871cZvnRtiC-19" value="GLWidget" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-240" y="200" width="320" height="560" as="geometry" />
         </mxCell>
-        <mxCell id="rni8tC35Q871cZvnRtiC-20" value="- xRot: int&#xa;- yRot: int&#xa;- zRot: int&#xa;- xTranslation: double&#xa;- yTranslation: double&#xa;- zTranslation: double&#xa;- m_scaling: double&#xa;- clickedPos: QPoint&#xa;- lastPos: QPoint&#xa;- qtBlack: QColor&#xa;- object: GLuint&#xa;- m_edgesVisible: bool&#xa;- m_transparency: float&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-19" vertex="1">
+        <mxCell id="rni8tC35Q871cZvnRtiC-20" value="- xRot: int&#xa;- yRot: int&#xa;- zRot: int&#xa;- xTranslation: double&#xa;- yTranslation: double&#xa;- zTranslation: double&#xa;- m_scaling: double&#xa;- clickedPos: QPoint&#xa;- lastPos: QPoint&#xa;- qtBlack: QColor&#xa;- object: GLuint&#xa;- m_edgesVisible: bool&#xa;- m_transparency: float&#xa;- m_meshName: QString" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-19" vertex="1">
           <mxGeometry y="26" width="320" height="214" as="geometry" />
         </mxCell>
         <mxCell id="rni8tC35Q871cZvnRtiC-21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-19" vertex="1">
           <mxGeometry y="240" width="320" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="rni8tC35Q871cZvnRtiC-22" value="+ updateObject(): void&#xa;+ setEdgesVisible(bool): void&#xa;+ setTransparency(float): void&#xa;+ setXRotation(int): void&#xa;+ setYRotation(int): void&#xa;+ setXTranslation(double): void&#xa;+ setYTranslation(double): void&#xa;# &lt;&lt;override&gt;&gt; initializeGL(): void&#xa;# &lt;&lt;override&gt;&gt; paintGL(): void&#xa;# &lt;&lt;override&gt;&gt; resizeGL(int, int): void&#xa;# &lt;&lt;override&gt;&gt; mousePressEvent(QEvent*): void&#xa;# &lt;&lt;override&gt;&gt; mouseMoveEvent(QEvent*): void&#xa;# &lt;&lt;override&gt;&gt; wheelEvent(QWheelEvent*): void&#xa;- drawCoorSys(int): void&#xa;- drawLineMesh(Mesh*): void&#xa;- drawMesh(Mesh*): void&#xa;- drawBox(double*): void&#xa;- makeObject(): GLuint&#xa;- enableLight(): void&#xa;- disableLight(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-19" vertex="1">
+        <mxCell id="rni8tC35Q871cZvnRtiC-22" value="+ updateObject(): void&#xa;+ setEdgesVisible(bool): void&#xa;+ setTransparency(float): void&#xa;+ setXRotation(int): void&#xa;+ setYRotation(int): void&#xa;+ setXTranslation(double): void&#xa;+ setYTranslation(double): void&#xa;+ setMeshName(QString): void&#xa;# &lt;&lt;override&gt;&gt; initializeGL(): void&#xa;# &lt;&lt;override&gt;&gt; paintGL(): void&#xa;# &lt;&lt;override&gt;&gt; resizeGL(int, int): void&#xa;# &lt;&lt;override&gt;&gt; mousePressEvent(QEvent*): void&#xa;# &lt;&lt;override&gt;&gt; mouseMoveEvent(QEvent*): void&#xa;# &lt;&lt;override&gt;&gt; wheelEvent(QWheelEvent*): void&#xa;- drawCoorSys(int): void&#xa;- drawLineMesh(Mesh*): void&#xa;- drawMesh(Mesh*): void&#xa;- drawBox(double*): void&#xa;- makeObject(): GLuint&#xa;- enableLight(): void&#xa;- disableLight(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-19" vertex="1">
           <mxGeometry y="248" width="320" height="312" as="geometry" />
         </mxCell>
         <mxCell id="rni8tC35Q871cZvnRtiC-28" value="MainWidget" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-680" y="480" width="240" height="120" as="geometry" />
+          <mxGeometry x="-680" y="480" width="240" height="160" as="geometry" />
         </mxCell>
         <mxCell id="rni8tC35Q871cZvnRtiC-29" value="- m_fileDialog: QFileDialog" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-28" vertex="1">
           <mxGeometry y="26" width="240" height="24" as="geometry" />
@@ -73,20 +73,20 @@
         <mxCell id="rni8tC35Q871cZvnRtiC-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-28" vertex="1">
           <mxGeometry y="50" width="240" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="rni8tC35Q871cZvnRtiC-31" value="+ accepted(): void&#xa;+ showEdges(int): void&#xa;+ updateTransparency(int): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-28" vertex="1">
-          <mxGeometry y="58" width="240" height="62" as="geometry" />
+        <mxCell id="rni8tC35Q871cZvnRtiC-31" value="+ accepted(): void&#xa;+ showEdges(int): void&#xa;+ updateTransparency(int): void&#xa;+ loadMesh(QString): void&#xa;+ updateMeshList(): void&#xa;+ changeMesh(QString): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-28" vertex="1">
+          <mxGeometry y="58" width="240" height="102" as="geometry" />
         </mxCell>
         <mxCell id="rni8tC35Q871cZvnRtiC-32" value="Ui_MainWidget" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-560" y="240" width="240" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="rni8tC35Q871cZvnRtiC-33" value="+ m_glWidget: GLWidget&#xa;+ m_loadButton: QPushButton&#xa;+ m_showEdgesCheckbox: QCheckBox&#xa;+ m_transparencySlider: QSlider" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-32" vertex="1">
-          <mxGeometry y="26" width="240" height="74" as="geometry" />
+        <mxCell id="rni8tC35Q871cZvnRtiC-33" value="+ m_glWidget: GLWidget&#xa;+ m_loadButton: QPushButton&#xa;+ m_showEdgesCheckbox: QCheckBox&#xa;+ m_transparencySlider: QSlider&#xa;+ m_meshesCombobox: QCombobox" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-32" vertex="1">
+          <mxGeometry y="26" width="240" height="94" as="geometry" />
         </mxCell>
         <mxCell id="rni8tC35Q871cZvnRtiC-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-32" vertex="1">
-          <mxGeometry y="100" width="240" height="8" as="geometry" />
+          <mxGeometry y="120" width="240" height="8" as="geometry" />
         </mxCell>
         <mxCell id="rni8tC35Q871cZvnRtiC-35" value="+ setupUi(QWidget*): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rni8tC35Q871cZvnRtiC-32" vertex="1">
-          <mxGeometry y="108" width="240" height="52" as="geometry" />
+          <mxGeometry y="128" width="240" height="32" as="geometry" />
         </mxCell>
         <mxCell id="rni8tC35Q871cZvnRtiC-37" value="" style="endArrow=block;endSize=16;endFill=0;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rni8tC35Q871cZvnRtiC-19" target="rni8tC35Q871cZvnRtiC-73" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -233,7 +233,7 @@
             <mxPoint x="-553" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AzGKDolX_vOUwPZVmgVA-0" value="" style="endArrow=none;html=1;endSize=12;startArrow=diamondThin;startSize=20;startFill=1;endFill=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rni8tC35Q871cZvnRtiC-0" target="rni8tC35Q871cZvnRtiC-8">
+        <mxCell id="AzGKDolX_vOUwPZVmgVA-0" value="" style="endArrow=none;html=1;endSize=12;startArrow=diamondThin;startSize=20;startFill=1;endFill=0;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rni8tC35Q871cZvnRtiC-0" target="rni8tC35Q871cZvnRtiC-8" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-190" y="1019.9961538461538" as="sourcePoint" />
             <mxPoint x="-110" y="1023.0730769230771" as="targetPoint" />
@@ -245,10 +245,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="AzGKDolX_vOUwPZVmgVA-1" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;labelPosition=right;verticalLabelPosition=top;" connectable="0" vertex="1" parent="AzGKDolX_vOUwPZVmgVA-0">
+        <mxCell id="AzGKDolX_vOUwPZVmgVA-1" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;labelPosition=right;verticalLabelPosition=top;" parent="AzGKDolX_vOUwPZVmgVA-0" connectable="0" vertex="1">
           <mxGeometry x="-1" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AzGKDolX_vOUwPZVmgVA-2" value="0..n" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;labelPosition=left;verticalLabelPosition=top;" connectable="0" vertex="1" parent="AzGKDolX_vOUwPZVmgVA-0">
+        <mxCell id="AzGKDolX_vOUwPZVmgVA-2" value="0..n" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;labelPosition=left;verticalLabelPosition=top;" parent="AzGKDolX_vOUwPZVmgVA-0" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry" />
         </mxCell>
       </root>
